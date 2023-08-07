@@ -5,7 +5,7 @@
 }
 :root {
   --text-color: rgb(255, 255, 255);
-  --bg-url: url(./assets/Background.png);
+  --bg-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgba(126, 67, 67, 0.5);
   --surface-color: rgba(233, 100, 156, 0.5);
   --switch-bg-url: url(./assets/Sun.svg);
@@ -14,7 +14,7 @@
 
 .dark {
     --text-color: rgb(0, 0, 0);
-  --bg-url: url(./assets/Background\ tt.png);
+  --bg-url: url(./assets/bg-mobile-dark.jpg);
   --stroke-color: rgba(0, 0, 0, 0.705);
   --surface-color: rgba(145, 55, 112, 0.719);
   --switch-bg-url: url(./assets/MoonStars.svg);
@@ -40,8 +40,8 @@ body * {
 #container {
   width: 100%;
   max-width: 588px;
-  margin: 10px auto 0px;
-  padding: 10 24px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
 }
 #switch {
   width: 64px;
@@ -135,4 +135,14 @@ ul :hover {
 footer {
   padding: 2px 0;
   text-align: center;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .dark { 
+    --bg-url: url(./assets/bg-desktop-dark.jpg);
+  }
 }
