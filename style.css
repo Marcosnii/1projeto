@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root {
-  --text-color: white;
+  --text-color: rgb(255, 255, 255);
   --bg-url: url(./assets/Background.png);
   --stroke-color: rgba(126, 67, 67, 0.5);
   --surface-color: rgba(233, 100, 156, 0.5);
@@ -38,7 +38,8 @@ body * {
 }
 /*border: 1px solid red;*/
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 10px auto 0px;
   padding: 10 24px;
 }
